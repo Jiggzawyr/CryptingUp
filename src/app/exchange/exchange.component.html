@@ -1,0 +1,13 @@
+<h2>Exchanges</h2>
+
+<ul>
+    <li class="exchange-info" *ngFor="let exchange of exchanges; let i = index">
+        <h3><a routerLink="{{exchange.exchange_id}}">{{exchange.name}}</a></h3>
+        <div>
+            Website: <a href="{{exchange.website}}">{{exchange.website}}</a>
+        </div>
+        <div>
+            Volume: {{exchange.volume_24h | number: '1.0-4'}}$
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,18 @@
+<h2>Markets</h2>
+
+<section class="filter-section">
+    <div class="filter">
+        <label for="baseAssetFilter">Base asset: </label><br>
+        <select id="baseAssetFilter" [(ngModel)]="baseAssetFilter">
+            <option *ngFor="let asset of assets" [ngValue]="asset.asset_id">{{asset.asset_id}}</option>
+          </select>
+    </div>
+    <div class="filter">
+        <button (click)="clear()">Clear</button>
+    </div>
+    <div class="filter">
+        <button (click)="search()">Search</button>
+    </div>
+</section>
+
+<app-market-list [markets]="markets"></app-market-list>

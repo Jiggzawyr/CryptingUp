@@ -1,0 +1,39 @@
+<h2>Asset</h2>
+
+<h3 *ngIf="!found">Asset not found!</h3>
+
+<div *ngIf="asset">
+    <h3>{{asset.asset_id}}</h3>
+    <h4>{{asset.name}}</h4>
+    <br>
+    <div><em>Description: </em>{{asset.description}}</div>
+    <br>
+    <div><em>Website: </em>{{asset.website}}</div>
+    <div><em>Ethereum contract address: </em>{{asset.ethereum_contract_address}}</div>
+    <div><em>Pegged: </em>{{asset.pegged}}</div>
+    <div><em>Price: </em>{{asset.price}}$</div>
+    <div><em>Volume 24h: </em>{{asset.volume_24h}}$</div>
+    <div><em>Volume 1h: </em>{{asset.change_1h}}$</div>
+    <div><em>Change 24h: </em>{{asset.change_24h}}$</div>
+    <div><em>Change 7d: </em>{{asset.change_7d}}$</div>
+    <div><em>Total supply: </em>{{asset.total_supply}}$</div>
+    <div><em>Circulating supply: </em>{{asset.circulating_supply}}$</div>
+    <div><em>Max supply: </em>{{asset.max_supply}}$</div>
+    <div><em>Market cap: </em>{{asset.market_cap}}$</div>
+    <div><em>Fully diluted market cap: </em>{{asset.fully_diluted_market_cap}}$</div>
+    <div><em>Status: </em>{{asset.status | uppercase}}</div>
+    <div><em>Created at: </em>{{asset.created_at | date:'medium'}}</div>
+    <div><em>Updated at: </em>{{asset.updated_at | date:'medium'}}</div>
+    <br>
+    <app-volume-list [quote]="asset.quote"></app-volume-list>
+</div>
+
+<br>
+
+<div>
+    <button class="back-button" (click)="goBack()">Go back</button>
+</div>
+
+<h2>Markets</h2>
+
+<app-market-list [markets]="markets"></app-market-list>

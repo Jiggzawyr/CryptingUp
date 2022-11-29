@@ -1,0 +1,42 @@
+<h2>Assets</h2>
+<section class="filter-section">
+  <div class="filter">
+    <label for="sortBy">Sort by: </label><br>
+    <select id="sortBy" [(ngModel)]="sortBy">
+        <option *ngFor="let sortOption of sortOptions" [ngValue]="sortOption">{{sortOption}}</option>
+      </select>
+  </div>
+  <div class="filter">
+    <button (click)="clear()">Clear</button>
+  </div>
+  <div class="filter">
+    <button (click)="sort()">Search</button>
+  </div>
+</section>
+
+<div class="assets-table">
+    <table>
+        <tr>
+            <th>Asset ID</th>
+            <th>Name</th>
+            <th>Pegged</th>
+            <th>Price</th>
+            <th>Volume 24h</th>
+            <th>Change 1h</th>
+            <th>Change 24h</th>
+            <th>Change 7d</th>
+            <th>Total supply</th>
+          </tr>
+          <tr *ngFor="let asset of assets; let i = index">
+            <td class="table-align-center"><a routerLink="{{asset.asset_id}}">{{asset.asset_id}}</a></td>
+            <td class="table-align-center">{{asset.name}}</td>
+            <td class="table-align-center">{{asset.pegged}}</td>
+            <td class="table-align-right">{{asset.price | number: '1.0-14'}}</td>
+            <td class="table-align-right">{{asset.volume_24h | number: '1.0-14'}}</td>
+            <td class="table-align-right">{{asset.change_1h | number: '1.0-14'}}</td>
+            <td class="table-align-right">{{asset.change_24h | number: '1.0-14'}}</td>
+            <td class="table-align-right">{{asset.change_7d | number: '1.0-14'}}</td>
+            <td class="table-align-right">{{asset.total_supply | number: '1.0-14'}}</td>
+          </tr>
+    </table>    
+</div>

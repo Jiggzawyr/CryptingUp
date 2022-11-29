@@ -1,0 +1,18 @@
+<div>
+    <ul>
+        <li class="market-info" *ngFor="let market of markets; let i = index">
+            <h3><a routerLink="/exchange/{{market.exchange_id}}">{{market.exchange_id}}</a></h3>
+            <h3>{{market.symbol}}</h3>
+            <div><em>Base asset: </em>{{market.base_asset}}</div>
+            <div><em>Quote asset: </em>{{market.quote_asset}}</div>
+            <div><em>Price - unconverted: </em>{{market.price_unconverted | number: '1.0-15'}}</div>
+            <div><em>Price: </em>{{market.price | number: '1.0-15'}}</div>
+            <div><em>Change: </em>{{market.change_24h | number: '1.0-15'}}</div>
+            <div><em>Spread: </em>{{market.spread | number: '1.0-15'}}</div>
+            <div><em>Volume: </em>{{market.volume_24h | number: '1.0-15'}}</div>
+            <div><em>Status: </em>{{market.status | uppercase}}</div>
+            <div><em>Created at: </em>{{market.created_at | date:'medium' }}</div>
+            <div><em>Updated at: </em>{{market.updated_at | date:'medium' }}</div>
+        </li>
+    </ul>
+</div>

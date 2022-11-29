@@ -1,0 +1,39 @@
+<div *ngIf="quote">
+    <div class="volume-list">
+        <div>USD</div>
+        <div *ngIf="quote.USD.price"><em>Price: </em>{{quote.USD.price | number: '1.0-15'}}</div>
+        <div *ngIf="quote.USD.volume_24h"><em>Volume 24h: </em>{{quote.USD.volume_24h | number: '1.0-15'}}</div>
+        <div *ngIf="quote.USD.market_cap"><em>Market cap: </em>{{quote.USD.market_cap | number: '1.0-15'}}</div>
+        <div *ngIf="quote.USD.fully_diluted_market_cap"><em>Fully diluted market cap: </em>{{quote.USD.fully_diluted_market_cap | number: '1.0-15'}}</div>
+        <div>CAD</div>
+        <div *ngIf="quote.CAD.price"><em>Price: </em>{{quote.CAD.price | number: '1.0-15'}}</div>
+        <div *ngIf="quote.CAD.volume_24h"><em>Volume 24h: </em>{{quote.CAD.volume_24h | number: '1.0-15'}}</div>
+        <div *ngIf="quote.CAD.market_cap"><em>Market cap: </em>{{quote.CAD.market_cap | number: '1.0-15'}}</div>
+        <div *ngIf="quote.CAD.fully_diluted_market_cap"><em>Fully diluted market cap: </em>{{quote.CAD.fully_diluted_market_cap | number: '1.0-15'}}</div>
+        <div>AUD</div>
+        <div *ngIf="quote.AUD.price"><em>Price: </em>{{quote.AUD.price | number: '1.0-15'}}</div>
+        <div *ngIf="quote.AUD.volume_24h"><em>Volume 24h: </em>{{quote.AUD.volume_24h | number: '1.0-15'}}</div>
+        <div *ngIf="quote.AUD.market_cap"><em>Market cap: </em>{{quote.AUD.market_cap | number: '1.0-15'}}</div>
+        <div *ngIf="quote.AUD.fully_diluted_market_cap"><em>Fully diluted market cap: </em>{{quote.AUD.fully_diluted_market_cap | number: '1.0-15'}}</div>
+        <div>GBP</div>
+        <div *ngIf="quote.GBP.price"><em>Price: </em>{{quote.GBP.price | number: '1.0-15'}}</div>
+        <div *ngIf="quote.GBP.volume_24h"><em>Volume 24h: </em>{{quote.GBP.volume_24h | number: '1.0-15'}}</div>
+        <div *ngIf="quote.GBP.market_cap"><em>Market cap: </em>{{quote.GBP.market_cap | number: '1.0-15'}}</div>
+        <div *ngIf="quote.GBP.fully_diluted_market_cap"><em>Fully diluted market cap: </em>{{quote.GBP.fully_diluted_market_cap | number: '1.0-15'}}</div>
+        <div>NZD</div>
+        <div *ngIf="quote.NZD.price"><em>Price: </em>{{quote.NZD.price | number: '1.0-15'}}</div>
+        <div *ngIf="quote.NZD.volume_24h"><em>Volume 24h: </em>{{quote.NZD.volume_24h | number: '1.0-15'}}</div>
+        <div *ngIf="quote.NZD.market_cap"><em>Market cap: </em>{{quote.NZD.market_cap | number: '1.0-15'}}</div>
+        <div *ngIf="quote.NZD.fully_diluted_market_cap"><em>Fully diluted market cap: </em>{{quote.NZD.fully_diluted_market_cap | number: '1.0-15'}}</div>
+        <div>JPY</div>
+        <div *ngIf="quote.JPY.price"><em>Price: </em>{{quote.JPY.price | number: '1.0-15'}}</div>
+        <div *ngIf="quote.JPY.volume_24h"><em>Volume 24h: </em>{{quote.JPY.volume_24h | number: '1.0-15'}}</div>
+        <div *ngIf="quote.JPY.market_cap"><em>Market cap: </em>{{quote.JPY.market_cap | number: '1.0-15'}}</div>
+        <div *ngIf="quote.JPY.fully_diluted_market_cap"><em>Fully diluted market cap: </em>{{quote.JPY.fully_diluted_market_cap | number: '1.0-15'}}</div>
+        <div>EUR</div>
+        <div *ngIf="quote.EUR.price"><em>Price: </em>{{quote.EUR.price | number: '1.0-15'}}</div>
+        <div *ngIf="quote.EUR.volume_24h"><em>Volume 24h: </em>{{quote.EUR.volume_24h | number: '1.0-15'}}</div>
+        <div *ngIf="quote.EUR.market_cap"><em>Market cap: </em>{{quote.EUR.market_cap | number: '1.0-15'}}</div>
+        <div *ngIf="quote.EUR.fully_diluted_market_cap"><em>Fully diluted market cap: </em>{{quote.EUR.fully_diluted_market_cap | number: '1.0-15'}}</div>
+    </div>
+</div>

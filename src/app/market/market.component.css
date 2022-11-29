@@ -1,0 +1,18 @@
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.filter-section {
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+    margin: 1px;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,35 @@
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.assets-table table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.assets-table table {
+    width: 100%;
+}
+
+.table-align-center {
+    text-align: center;
+}
+
+.table-align-right {
+    text-align: right;
+}
+
+.filter-section {
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+    margin: 1px;
+    display: flex;
+    align-items: center;
+}

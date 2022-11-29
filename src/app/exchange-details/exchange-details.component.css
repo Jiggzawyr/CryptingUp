@@ -1,0 +1,11 @@
+.exchange-info {
+    display: flex;
+    flex-direction: column; 
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    width: 250px;
+    height: 300px;
+}
+
